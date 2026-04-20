@@ -40,12 +40,10 @@
 
     <div id="final-letter">
         <div id="letter-inner">
-            <p class="msg">Bilasanmi, Sewinch… san bilan gaplashsam, vaqt qanaqa o‘tib ketganiniyam sezmay qolaman.</p>
-            <p class="msg">Go‘yo hamma narsa to‘xtab, faqat san qoladigandek bo‘ladi. Ko‘zim hamisha sani izlaydi, yuragim esa allaqachon sani tanlab bo‘lgan.</p>
-            <p class="msg">Sewinch, san oddiy qiz emassan… san kelip, mening oddiy hayotimni butunlay o‘zgartirgan mo‘jizasan.</p>
-            <p class="msg">Men mukammal odam emasman, lekin sani baxtli qilish uchun qo‘limdan kelgan hamma narsani qilaman.</p>
-            <p class="msg">San kulganingda, Sewinch… dunyodagi hamma muammo bir zumga yo‘qolib ketgandek bo‘ladi.</p>
-            <p class="msg">Balki men eng zo‘r gaplarni aytolmasman… lekin bilaman — san men uchun eng zo‘risan.</p>
+            <p class="msg">Bilasanmi, Sewinch…</p>
+            <p class="msg">San bilan gaplashsam, vaqt qanaqa o‘tib ketganini sezmay qolaman.</p>
+            <p class="msg">Go‘yo hamma narsa to‘xtab, faqat san qoladigandek bo‘ladi.</p>
+            <p class="msg">Sewinch, san oddiy qiz emassan… mening hayotimni butunlay o‘zgartirgan mo‘jizasan.</p>
             <p class="msg">Sanga qarasam, ichimda nimadir tinchlanadi… go‘yo o‘zimni topgandek bo‘laman.</p>
             <p class="msg">Agar yana tanlashim kerak bo‘lsa — yana-yana sani tanlardim ❤️</p>
             <button id="close-btn">Yopish</button>
@@ -53,12 +51,12 @@
     </div>
 
     <script>
-        // PAROL QISMI (Hozircha Sewinch deb qo'ydim)
+        // PAROL QISMI - FAQAT SEWINCH SO'ZINI KIRITSA OCHILADI
         let pass = "";
         while(pass.toLowerCase() !== "sewinch") {
-            pass = prompt("Maxfiy parolni kiriting (Sewinch):");
+            pass = prompt("Maxfiy parolni kiriting:"); // BU YERDA ENDI KO'RINMAYDI
             if(pass === null) break;
-            if(pass.toLowerCase() !== "sewinch") alert("Xato parol!");
+            if(pass.toLowerCase() !== "sewinch") alert("Xato! Bu maktub faqat Sewinch uchun.");
         }
 
         const canvas = document.getElementById('matrix');
